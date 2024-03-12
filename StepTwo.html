@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget calculator</title>
+    <link rel="stylesheet" href="styleTwo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Budget calculator</h1>
+    </header>
+    <section class="mainPage">
+        <section class="input">
+            <h2>Your Monthly Budget</h2>
+            <div>
+                <p id="">Needs (50%) - 
+                <p id="fiftyNum">XX</p>
+                </p>
+            </div>
+            <div>
+                <p id="">Wants (30%) - 
+                <p id="thirtyNum">XX</p>
+                </p>
+            </div>
+            <div>
+                <p id="">Savings (20%) - 
+                <p id="twentyNum">XX</p>
+                </p>
+            </div>
+            <button id="next">Next</button>
+        </section>
+        <section class="pieChart">
+            <div style="width: 800px;"><canvas id="chart"></canvas></div>
+            <script type="module" src="chart.js"></script>
+        </section>
+    </section>
+</body>
