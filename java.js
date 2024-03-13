@@ -26,6 +26,8 @@ function taxes() {
     }
 
     mathIt(tax);
+
+    location.href = './StepTwo.html'
 }
 
 
