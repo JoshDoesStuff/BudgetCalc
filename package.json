@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "license": "MIT",
     "scripts": {
-      "dev": "parcel ./*.html",
-      "build": "parcel build ./*.html"
+      "dev": "parcel ./*.html ./*.css ./*.js",
+      "build": "parcel build ./*.html ./*.css ./*.js"
     },
     "devDependencies": {
       "parcel": "^2.6.2"

@@ -9,9 +9,12 @@ const formatter = new Intl.NumberFormat('en-US', {
   let fifty = localStorage.getItem('fifty');
   let thirty = localStorage.getItem('thirty');
   let twenty = localStorage.getItem('twenty');
-  document.getElementById('fiftyNum').innerText(formatter.format(fifty));
-  document.getElementById('thirtyNum').innerText(formatter.format(thirty));
-  document.getElementById('twentyNum').innerText(formatter.format(twenty));
+  let fiftyOutput = document.getElementById('fiftyNum')
+  let thirtyOutput = document.getElementById('thirtyNum')
+  let twentyOutput = document.getElementById('twentyNum')
+  fiftyOutput.innerText = (formatter.format(fifty));
+  thirtyOutput.innerText = (formatter.format(thirty));
+  twentyOutput.innerText = (formatter.format(twenty));
 
 (async function() {
   let fifty = localStorage.getItem('fifty');
